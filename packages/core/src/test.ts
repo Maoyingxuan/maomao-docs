@@ -1,1 +1,1 @@
-export const maomao = 1
+export const maomao = 0
