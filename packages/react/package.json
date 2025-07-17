@@ -1,5 +1,5 @@
 {
-  "name": "@maomao-doc/core",
+  "name": "@maomao-doc/react",
   "version": "1.0.0",
   "scripts": {
     "build:watch": "tsup --watch",

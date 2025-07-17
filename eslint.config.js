@@ -53,7 +53,7 @@ const coreConfig = {
     languageOptions: {
         parser: tseslint.parser,
         parserOptions: {
-            project: ['./tsconfig.json'],
+            project: ['./tsconfig.eslint.json'],
             tsconfigRootDir: __dirname + '/packages/core',
         },
     },
