@@ -10,10 +10,14 @@ const tseslint = require('typescript-eslint')
 const ignores = ['dist', 'build', '**/*.js', '**/*.mjs', '**/*.d.ts', 'eslint.config.js', 'commitlint.config.js']
 
 const frontendBuilderConfig = {
-    files: ['apps/frontend/builder/**/*.{ts,tsx}'],
+    files: ['apps/frontend/web/**/*.{ts,tsx}'],
     languageOptions: {
         ecmaVersion: 2020,
         globals: globals.browser,
+        parserOptions: {
+            project: ['./tsconfig.eslint.json'],
+            tsconfigRootDir: __dirname + '/apps//frontend/web',
+        },
     },
     plugins: {
         'react-hooks': reactHooks,
